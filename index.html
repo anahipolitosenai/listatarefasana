@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Agenda</title>
+</head>
+
+
+<body>
+
+
+    <h1>Minha Agenda</h1>
+
+
+    <script>
+    
+        let minhaAgenda = [
+            "8h - Estudar",
+            "9h - Fazer exercícios",
+            "10h - Reunião de equipe",
+            "12h - Almoçar",
+            "14h - Revisar código",
+            "16h - Ler um livro",
+            "18h - Preparar o jantar"
+        ];
+
+
+        console.log("Passo 1 - Agenda criada:", [...minhaAgenda]);
+
+
+        console.log("Passo 3 - Após adicionar tarefa urgente:", [...minhaAgenda]);
+
+
+        console.log("Passo 4 - Após ordenar:", [...minhaAgenda]);
+
+
+        console.log("Agenda agora:", [...minhaAgenda]);
+
+
+        console.log("Agenda final:", [...minhaAgenda]);
+
+
+       
+        let tarefaConcluida = minhaAgenda.shift();
+        console.log("Passo 5 - Tarefa concluída:", tarefaConcluida);
+        console.log("Agenda agora:", minhaAgenda);
+
+
+      
+        let tarefaDesistida = minhaAgenda.pop();
+        console.log("Passo 6 - Tarefa abandonada:", tarefaDesistida);
+        console.log("Agenda agora:", minhaAgenda);
+
+
+        
+        let tarefaRemovida = minhaAgenda.splice(2, 1);
+        console.log("Passo 7 - Tarefa removida do meio:", tarefaRemovida);
+        console.log("Agenda final:", minhaAgenda);
+
+
+    </script>
+
+
+</body>
+
+
+</html>
